@@ -1,106 +1,77 @@
-# Cảm biến siêu âm MKE-S01 Ultrasonic Distance Sensor
+# Mạch Mtiny Programmer (Arduino Compatible)
+
+![](/image/mtiny_Prg_01.jpg)
 
 ## Giới thiệu
 
-Cảm biến siêu âm MKE-S01 Ultrasonic Distance Sensor sử dụng sóng siêu âm để đo khoảng cách đến vật cản từ 3~200cm, cảm biến sử dụng IC xử lý, thạch anh chất lượng tốt cho độ bền, độ ổn định và độ chính xác cao, thích hợp để làm các loại robot tránh vật cản, chống trộm, đo khoảng cách,...
+Mạch Mtiny Programmer (Arduino Compatible) được nghiên cứu và và sản xuất bởi MakerLab.vn mà một mạch chuyển USB-UART được thiết kế chuyên dụng để nạp chương trình và giao tiếp máy tính cho các mạch trong Series Mtiny sử dụng chuẩn nạp Mtiny Socket - IDC 8-Pin (2x4), mạch tương thích với phần mềm Arduino và có thể sử dụng với hầu hết các hệ điều hành phổ biến hiện nay: Windows, MacOS, Linux,...
 
-Cảm biến siêu âm MKE-S01 Ultrasonic Distance Sensor thuộc hệ sinh thái phần cứng Robotics MakerEdu nên có thể sử dụng trực tiếp an toàn với các mạch điều khiển trung tâm ở cả hai mức điện áp 3.3VDC và 5VDC như: Arduino, Raspberry Pi, Jetson Nano, Micro:bit,....với chuẩn kết nối Connector XH2.54 thông dụng.
+> Mtiny là viết tắt của Maker Tiny là dự án tạo ra các mạch vi điều khiển với thiết kế nhỏ gọn sử dụng chuẩn chân cắm DIP 2.54mm, các mạch Mtiny cùng sử dụng chung mạch nạp chương trình và giao tiếp máy tính Mtiny Programmer với chuẩn nạp Mtiny Socket.
 
-## Nguyên lý hoạt động
+Các mạch Mtiny hỗ trợ nạp chương trình và giao tiếp máy tính bằng mạch Mtiny Programmer:
 
-Cảm biến siêu âm đo khoảng cách đến vật cản bằng cách phát sóng siêu âm từ mắt phát T (Transmitter) đến vật cản, sóng siêu âm khi đó sẽ bị phản xạ lại và truyền tới mắt thu R (Receiver), ghi nhận khoảng thời gian t quá trình này xảy ra bằng mạch xử lý kết hợp với vận tốc xác định của sóng siêu âm ta có thể tính được khoảng cách tương đối chính xác đến vật cản theo công thức:
-
-Khoảng cách đến vật cản L = (khoảng thời gian t * vận tốc sóng siêu âm) / 2
-
-![MKE_S01](/image/MKE_S01_1.jpg)
-- Minh họa sóng siêu âm từ phát phát T (Transmitter) đến vật cản bị phản xạ lại và truyền tới mắt thu R (Receiver).
-- Minh họa sóng siêu âm từ phát phát T (Transmitter) đến vật cản bị phản xạ lại và truyền tới mắt thu R (Receiver).
-
-Để tăng độ chính xác và giảm nhiễu, sóng siêu âm sẽ được mắt phát T (Transmitter) phát ra theo tần số chuyên biệt để không bị nhiễu với các loại sóng khác của môi trường, phương pháp đo khoảng cách bằng cảm biến siêu âm tương đối chính xác và ổn định, tuy nhiên vẫn có một nhược điểm của phương pháp này là phụ thuộc vào hình dạng của vật thể phản xạ, vật thể có bề mặt không phẳng sẽ làm ảnh hưởng đến độ phản xạ của sóng siêu âm dẫn đến kết quả đo kém chính xác. 
+- Mạch Mtiny Uno ATmega328P (Arduino Compatible)
+- Mạch Mtiny ESP8266 ESP-07S (Arduino Compatible)
+- Mạch Mtiny ESP8266 ESP-12S (Arduino Compatible)
+- Mạch Mtiny ESP32 WROOM-32E (Arduino Compatible)
+- Mạch Mtiny ESP32 WROOM-32UE (Arduino Compatible)
+- Mạch Mtiny ESP32 WROVER-IE (Arduino Compatible)
 
 ## Thông số kỹ thuật
 
-- Model: MKE-S01
-- Điện áp hoạt động: 5VDC
-- Chuẩn giao tiếp: Digital
-- Điện áp giao tiếp: TTL 3.3VDC / 5VDC
-- Dòng điện hoạt động: 65mA
-- Tần số hoạt động: 40Khz
-- Khoảng cách đo được: 3-200cm
-- Góc quét: 15°
-- Tín hiệu ngõ vào Trigger: 10μs TTL pulse
-- Sử dụng trực tiếp an toàn với các board mạch giao tiếp ở cả hai mức điện áp 3.3VDC và 5VDC như: Arduino, Raspberry Pi, Jetson Nano, Micro:bit,....
-- Bổ sung thêm các thiết kế ổn định, chống nhiễu.
-- Chuẩn kết nối: connector XH2.54 4Pins
-- Thuộc hệ sinh thái phần cứng Robotics MakerEdu, tương thích tốt nhất khi sử dụng với các mạch điều khiển trung tâm của MakerEdu và MakerEdu Shield.
-
-## Hình ảnh sản phẩm
-
-![MKE_S01](/image/MKE_S01_2.jpg)
-
-![MKE_S01](/image/MKE_S01_3.jpg)
-
-## Kích thước sản phẩm
-
-![MKE_S01](/image/MKE_S01_4.JPG)
+Model Mạch Mtiny Programmer (Arduino Compatible)
+Main IC USB-UART CH340
+Power Supply 5VDC USB-C
+Interface UART
+5VDC Output Current Max 500mA
+3.3VDC Output Current Max 700mA
+Pinout 5V, 3V3, GND, TX, RX, IO0, AR (Arduino Reset), ER (ESP Reset)
+Compatible Mtiny Series
+Programmer Connector Mtiny Socket - IDC 8-Pin (2x4)
 
 ## Các chân tín hiệu
 
-- GND:	Chân cấp nguồn âm 0VDC
-- 5V:	Chân cấp nguồn dương 5VDC
-- TRIG:	Chân tín hiệu ngõ vào Trigger (Input: 3.3~5VDC)
-- ECHO:	Chân tín hiệu ngõ ra Echo (Output: 3.3VDC)
+![](/image/mtiny_Prg_02.png)
+
+AR (Arduino Reset) Chân phát tín hiệu Reset cho các mạch thuộc hệ Arduino
+3V3 Chân cấp nguồn 3.3VDC tối đa 700mA
+5V Chân cấp nguồn 5VDC tối đa 500mA
+GND Chân cấp nguồn GND 0VDC
+IO0 Chân kết nối với IO0 của ESP để kích hoạt nạp chương trình
+ER (ESP Reset) Chân cấp tín hiệu Reset / EN cho các mạch ESP
+TX Chân truyền tín hiệu UART của CH340 (tương thích 3.3/5VDC)
+RX Chân nhận tín hiệu UART của CH340 (tương thích 3.3/5VDC)
+
+## Kích thước
+
+![](/image/mtiny_Prg_03.jpg)
+
+## Hình ảnh
+
+![](/image/mtiny_Prg_04.jpg)
 
 ## Hướng dẫn sử dụng
 
-### Các thiết bị sử dụng trong bài hướng dẫn:
+1) Cài đặt Driver:
 
-#### Arduino:
-- [Mạch Vietduino Uno (Arduino Uno Compatible)](https://www.makerlab.vn/vuno)
-- [Mạch MakerEdu Shield for Vietduino](https://www.makerlab.vn/vietduinosd)
-- [Mạch màn hình MKE-M07 LCD1602 I2C Display Module](https://www.makerlab.vn/mkem07)
+> Lưu ý:
+Mạch Mtiny Programmer sử dụng chip nạp CH340 nên việc cài đặt Driver sẽ theo Hướng dẫn cài đặt Driver cho các mạch sử dụng IC giao tiếp USB-UART CH34x.
 
-#### mBlock:
+2) Hướng dẫn kết nối Mtiny Programmer với các mạch Mtiny để nạp chương trình và giao tiếp máy tính:
+Các mạch Mtiny đều sử dụng chung chuẩn nạp chương trình và giao tiếp máy tính Mtiny Socket để kết nối với mạch Mtiny Programmer như hình dưới đây:
 
-- [Mạch MakerEdu Creator (Arduino Uno Compatible)](https://www.makerlab.vn/creator)
-- [Mạch màn hình MKE-M07 LCD1602 I2C Display Module](https://www.makerlab.vn/mkem07)
+![](/image/mtiny_Prg_05.jpg)
 
-#### Micro:bit:
+Để có độ tuỳ biến cao các mạch Mtiny có thể đã được hàn rào kết nối sẵn hoặc chưa hàn, nếu chưa hàn các bạn có thể hàn Mtiny Socket sử dụng rào đực đôi Header 2x4pins theo chiều hướng lên và kết nối như sau:
 
-- [Mạch Micro:bit V2](https://hshop.vn/products/kit-hoc-lap-trinh-stem-cho-tre-em-micro-bit-v2) hoặc các phiên bản tương thích.
-- [Mạch MakerEdu Shield for Micro:bit](https://www.makerlab.vn/microbitsd)
-- [Mạch màn hình MKE-M07 LCD1602 I2C Display Module](https://www.makerlab.vn/mkem07)
+![](/image/mtiny_Prg_06.jpg)
 
-### Hướng dẫn sử dụng với Arduino (Code C)
-[Hướng dẫn cài đặt phần mềm, nạp chương trình, cài đặt bộ thư viện Arduino cơ bản.](https://github.com/makerlabvn/Arduino-Vietduino)
-- Tải và cài đặt [phần mềm Arduino tại đây.](https://www.arduino.cc/en/software)
-- Trong Tools / Library Manager, tìm và cài đặt bộ thư viện tổng hợp "MAKERLABVN" by MakerLab.vn
-- Mở chương trình mẫu "MKE_S01_Ultrasonic_LCD_Serial.ino" tại File / Examples / MAKERLABVN / Sensor / MKE_S01_Ultrasonic hoặc [tải chương trình mẫu tại đây](/arduino)
-- Chọn board là Arduino Uno (mạch Vietduino Uno tương thích với Arduino Uno), chọn đúng cổng COM Port của mạch và tiến hành nạp chương trình.
-- Kết nối mạch Vietduino Uno với MakerEdu Shield, kết nối cảm biến tại cổng [D12,13] và màn hình LCD vào cổng [I2C] trên MakerEdu Shield, cấp nguồn qua cổng USB của Vietduino Uno để thấy chương trình hoạt động.
+Sau khi đã hàn rào các bạn kết nối các mạch Mtiny với Mạch Mtiny Programmer bằng cáp IDC 2x4pins, kết nối Mạch Mtiny Programmer với máy tính bằng cáp USB-C sẽ thấy Led nguồn PWR trên mạch Mtiny Programmer và Mtiny phát sáng, kiểm tra máy tính đã nhận Driver của mạch Mtiny Programmer như ở bước 1 là đã có thể sử dụng:
 
-### Hướng dẫn lập trình với mBlock (kéo thả khối)
-[Hướng dẫn cài đặt phần mềm, nạp chương trình, cài đặt Extension mBlock cơ bản.](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
-- Tải và cài đặt phần mềm mBlock 5 ([Windows](https://www.mediafire.com/file/ma55iajd7glwmbo/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Windows.zip/file) / [Mac Intel](https://www.mediafire.com/file/pjfngy6d7ktb55f/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Mac_Intel.zip/file) / [Mac M1M2](https://www.mediafire.com/file/mfdkgpgnpa7uv2s/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Mac_M1M2.zip/file))
-- Thêm Device "MakerEdu Creator" by MakerEduVN
-- Thêm Extension "Upload Mode Broadcast" by mBlock Official
-- Thêm Extension "MakerEdu Hardware" by MakerEduVN
-- Mở [chương trình mẫu tại đây](/mBlock5), kết nối MakerEdu Creator với máy tính và nạp chương trình.
-- Kết nối cảm biến với cổng [D3,D2] và màn hình LCD vào cổng [I2C] trên MakerEdu Creator, cấp nguồn qua cổng USB của MakerEdu Creator để thấy chương trình hoạt động.
-
-
-### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
-[Hướng dẫn nạp chương trình, cài đặt Extension Micro:bit cơ bản.](https://github.com/makerlabvn/MakeCode-microbit)
-- Khởi động phần mềm MakeCode tại: [https://makecode.microbit.org/](https://makecode.microbit.org/)
-- Chọn My Projects / Import / Import URL theo đường link của chương trình mẫu: [https://github.com/devmakerlabvn/makecode-mke-s01-ultrasonic-distance-sensor](https://github.com/devmakerlabvn/makecode-mke-s01-ultrasonic-distance-sensor)
-- Kết nối Micro:bit với máy tính và nạp chương trình.
-- Kết nối mạch Micro:bit với MakerEdu Shield, kết nối cảm biến tại cổng [P0+P1] và màn hình LCD vào cổng [I2C] trên MakerEdu Shield, **cấp nguồn qua cổng USB của MakerEdu Shield** để thấy chương trình hoạt động.
-
-## Hỗ trợ và liên hệ:
-
-- Website: [https://www.makerlab.vn/](https://www.makerlab.vn/)
-- Facebook: [https://www.facebook.com/makerlabvn](https://www.facebook.com/makerlabvn)
+![](/image/mtiny_Prg_07.jpg)
 
 ## Nhà phân phối
 
-- Các bạn có thể mua sản phẩm của MakerLab tại các [Nhà Phân Phối.](https://www.makerlab.vn/distributor/)
+Có thể mua Mạch Mtiny Programmer (Arduino Compatible) tại các nhà phân phối sau:
+
+- [Hshop.vn - Điện tử & Robot.](hshop.vn)
