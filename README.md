@@ -10,37 +10,95 @@ Mạch Mtiny Programmer (Arduino Compatible) được nghiên cứu và và sả
 
 Các mạch Mtiny hỗ trợ nạp chương trình và giao tiếp máy tính bằng mạch Mtiny Programmer:
 
-- Mạch Mtiny Uno ATmega328P (Arduino Compatible)
-- Mạch Mtiny ESP8266 ESP-07S (Arduino Compatible)
-- Mạch Mtiny ESP8266 ESP-12S (Arduino Compatible)
-- Mạch Mtiny ESP32 WROOM-32E (Arduino Compatible)
-- Mạch Mtiny ESP32 WROOM-32UE (Arduino Compatible)
-- Mạch Mtiny ESP32 WROVER-IE (Arduino Compatible)
+- [Mạch Mtiny Uno ATmega328P (Arduino Compatible)   ](https://makerlab.vn/mtuno) 
+- [Mạch Mtiny ESP8266 ESP-07S (Arduino Compatible)  ](https://makerlab.vn/mtesp07s)
+- [Mạch Mtiny ESP8266 ESP-12S (Arduino Compatible)  ](https://makerlab.vn/mtesp12s)
+- [Mạch Mtiny ESP32 WROOM-32E (Arduino Compatible)  ](https://makerlab.vn/mtwroom32)
+- [Mạch Mtiny ESP32 WROVER-IE (Arduino Compatible)  ](https://makerlab.vn/mtwrover32)
 
 ## Thông số kỹ thuật
 
-Model Mạch Mtiny Programmer (Arduino Compatible)
-Main IC USB-UART CH340
-Power Supply 5VDC USB-C
-Interface UART
-5VDC Output Current Max 500mA
-3.3VDC Output Current Max 700mA
-Pinout 5V, 3V3, GND, TX, RX, IO0, AR (Arduino Reset), ER (ESP Reset)
-Compatible Mtiny Series
-Programmer Connector Mtiny Socket - IDC 8-Pin (2x4)
+<table><thead>
+  <tr>
+    <th>Model</th>
+    <th>Mạch Mtiny Programmer (Arduino Compatible)</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Main IC</td>
+    <td>USB-UART CH340</td>
+  </tr>
+  <tr>
+    <td>Power Supply</td>
+    <td>5VDC USB-C</td>
+  </tr>
+  <tr>
+    <td>Interface</td>
+    <td>UART</td>
+  </tr>
+  <tr>
+    <td>5VDC Output Current</td>
+    <td>Max 500mA</td>
+  </tr>
+  <tr>
+    <td>3.3VDC Output Current</td>
+    <td>Max 700mA</td>
+  </tr>
+  <tr>
+    <td>Pinout</td>
+    <td>5V, 3V3, GND, TX, RX, IO0, AR (Arduino Reset), ER (ESP Reset)</td>
+  </tr>
+  <tr>
+    <td>Compatible</td>
+    <td><a href="">Mtiny Series</a></td>
+  </tr>
+  <tr>
+    <td>Programmer Connector</td>
+    <td>Mtiny Socket - IDC 8-Pin (2x4)</td>
+  </tr>
+</tbody>
+</table>
 
 ## Các chân tín hiệu
 
 ![](/image/mtiny_Prg_02.png)
 
-AR (Arduino Reset) Chân phát tín hiệu Reset cho các mạch thuộc hệ Arduino
-3V3 Chân cấp nguồn 3.3VDC tối đa 700mA
-5V Chân cấp nguồn 5VDC tối đa 500mA
-GND Chân cấp nguồn GND 0VDC
-IO0 Chân kết nối với IO0 của ESP để kích hoạt nạp chương trình
-ER (ESP Reset) Chân cấp tín hiệu Reset / EN cho các mạch ESP
-TX Chân truyền tín hiệu UART của CH340 (tương thích 3.3/5VDC)
-RX Chân nhận tín hiệu UART của CH340 (tương thích 3.3/5VDC)
+<table><thead>
+  <tr>
+    <th>AR (Arduino Reset)</th>
+    <th>Chân phát tín hiệu Reset cho các mạch thuộc hệ Arduino</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>3V3</td>
+    <td>Chân cấp nguồn 3.3VDC tối đa 700mA</td>
+  </tr>
+  <tr>
+    <td>5V</td>
+    <td>Chân cấp nguồn 5VDC tối đa 500mA</td>
+  </tr>
+  <tr>
+    <td>GND</td>
+    <td>Chân cấp nguồn GND 0VDC</td>
+  </tr>
+  <tr>
+    <td>IO0</td>
+    <td>Chân kết nối với IO0 của ESP để kích hoạt nạp chương trình</td>
+  </tr>
+  <tr>
+    <td>ER (ESP Reset)</td>
+    <td>Chân cấp tín hiệu Reset / EN cho các mạch ESP</td>
+  </tr>
+  <tr>
+    <td>TX</td>
+    <td>Chân truyền tín hiệu UART của CH340 (tương thích 3.3/5VDC)</td>
+  </tr>
+  <tr>
+    <td>RX</td>
+    <td>Chân nhận tín hiệu UART của CH340 (tương thích 3.3/5VDC)</td>
+  </tr>
+</tbody>
+</table>
 
 ## Kích thước
 
@@ -74,4 +132,4 @@ Sau khi đã hàn rào các bạn kết nối các mạch Mtiny với Mạch Mti
 
 Có thể mua Mạch Mtiny Programmer (Arduino Compatible) tại các nhà phân phối sau:
 
-- [Hshop.vn - Điện tử & Robot.](hshop.vn)
+- [Hshop.vn - Điện tử & Robot.](https://hshop.vn)
